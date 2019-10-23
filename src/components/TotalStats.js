@@ -9,27 +9,27 @@ export class TotalStats extends Component {
       <div>
         <Container>
           <h3 style={{ fontWeight: "bold" }} fontWeight="bold">
-            Total <span style={{ color: "#F1295C" }}>Stats</span>
+            ODI <span style={{ color: "#F1295C" }}>Stats</span>
           </h3>
           <Row className="justify-content-md-center">
             <Col sm="true">
               <Fade left delay={9000}>
                 <div className="p-3">
-                  <CardTile />
+                  <CardTile header='Total Runs' info='18426'/>
                 </div>
               </Fade>
             </Col>
             <Col sm="true">
             <Fade delay={9000}>
               <div className="p-3">
-                <CardTile />
+                <CardTile header='Highest Score' info='200*' />
               </div>
               </Fade>
             </Col>
             <Col sm="true">
               <Fade right delay={9000}>
                 <div className="p-3">
-                  <CardTile />
+                  <CardTile header='Batting Avg' info='44.8'/>
                 </div>
               </Fade>
             </Col>

@@ -1,27 +1,16 @@
-
 .App {
- 
   min-height: 100vh;
-  padding-left:100px ;
-  padding-right:100px ;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .bg-color {
   background-color: #2026d2;
 }
-.App-logo {
-  height: 40vmin;
-}
 .h {
   background-color: #171717;
 }
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 .Header-text {
   font-size: 1.7em;
 }

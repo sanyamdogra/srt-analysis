@@ -5,7 +5,7 @@ import "../App.css";
 import stats from "../assets/stats.svg";
 
 const styles = {
-  containerClass: { height: "500px", width: "700px", "padding-top": "150px" },
+  containerClass: { height: "400px", width: "700px", "padding-top": "150px" },
   colorClass: { color: "#2026D2" },
   boldClass: { "font-weight": "900" },
   imageContainerClass:{"padding-top": "20px"}
