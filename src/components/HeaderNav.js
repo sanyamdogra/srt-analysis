@@ -4,12 +4,18 @@ import srtlogo from "../assets/stlogo.png";
 
 import "../App.css";
 
+const styles = {
+  colorClass: { color: "#2026D2" },
+  boldClass: { "font-weight": "900" },
+  paddingClass: { "padding-left": "180px" }
+};
+
 export class HeaderNav extends Component {
   render() {
     return (
       <div>
         <Navbar expand="lg" bg="color" variant="dark">
-          <Navbar.Brand>
+          <Navbar.Brand style={styles.paddingClass}>
             <img
               alt=""
               src={srtlogo}
@@ -17,7 +23,8 @@ export class HeaderNav extends Component {
               height="50"
               className="d-inline-block align-top "
             />
-            <span className="Header-text p-3">{"S R T"}</span>
+            <span className="Header-text p-3">{"s r t"}</span>
+            <span className="justify-content-end">analysis</span>
           </Navbar.Brand>
         </Navbar>
       </div>

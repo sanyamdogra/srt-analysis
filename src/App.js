@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import HeaderNav from "./components/HeaderNav";
 import QuoteBoard from "./components/QuoteBoard";
+import TotalStats from "./components/TotalStats";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <HeaderNav />
       <div className="App">
         <QuoteBoard />
+        <TotalStats />
       </div>
     </div>
   );
