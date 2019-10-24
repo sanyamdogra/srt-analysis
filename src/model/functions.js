@@ -1,5 +1,42 @@
 import data from "./data.json";
 
+// Function to get Total ODI Stats
+const getTotalStats = () => {
+  let totalRuns = 0;
+  let totalCatches = 0;
+  let totalWickets = 0;
+  let maxRun = 0;
+  let odiAvg = 44.8;
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].batting_score !== "TDNB" && data[i].batting_score !== "DNB") {
+      totalRuns += parseInt(data[i].batting_score, 10);
+    }
+    if (data[i].wickets !== "-") {
+      totalWickets += parseInt(data[i].wickets, 10);
+    }
+    if (data[i].catches !== "-") {
+      totalCatches += parseInt(data[i].catches, 10);
+    }
+    if (parseInt(data[i].batting_score, 10) > maxRun) {
+      maxRun = parseInt(data[i].batting_score, 10);
+    }
+  }
+  return { totalRuns, totalCatches, totalWickets, maxRun, odiAvg };
+};
+
+//Function To return individual Scores for total innings
+const getRunsPerInnings = () => {
+  const runs = [];
+  for (let i = 0; i < data.length; i++) {
+    runs.push({
+      name: `Match${i + 1}`,
+      runs: data[i].batting_score
+    });
+  }
+
+  return runs;
+};
+
 //Return Total runs, catches and wickets against a team (for small cards)
 const getSummarizedStats = team => {
   let totalRuns = 0;
@@ -140,6 +177,8 @@ const teams = () => {
 };
 
 export {
+  getTotalStats,
+  getRunsPerInnings,
   teams,
   getSummarizedStats,
   getRunsPerTeam,

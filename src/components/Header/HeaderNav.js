@@ -7,7 +7,7 @@ import "../../App.css";
 const styles = {
   colorClass: { color: "#2026D2" },
   boldClass: { "font-weight": "900" },
-  paddingClass: { "padding-left": "180px" }
+  paddingClass: { "padding-left": "160px" }
 };
 
 export class HeaderNav extends Component {
