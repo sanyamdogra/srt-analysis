@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
-import srtlogo from "../assets/stlogo.png";
+import srtlogo from "../../assets/stlogo.png";
 
-import "../App.css";
+import "../../App.css";
 
 const styles = {
   colorClass: { color: "#2026D2" },

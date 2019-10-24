@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
 import { Container, Row, Col } from "react-bootstrap";
-import "../App.css";
-import stats from "../assets/stats.svg";
+import "../../App.css";
+import stats from "../../assets/stats.svg";
 
 const styles = {
-  containerClass: { height: "400px", width: "700px", "padding-top": "150px" },
+  containerClass: { height: "380px", width: "700px", "padding-top": "160px" },
   colorClass: { color: "#2026D2" },
   boldClass: { "font-weight": "900" },
   imageContainerClass:{"padding-top": "20px"}
@@ -20,7 +20,7 @@ export class QuoteBoard extends Component {
             <Row>
               <Col sm={8}>
                 <Container style={styles.containerClass}>
-                  <div className="pt-4" />
+                  <div/>
                   <h3 style={styles.boldClass}>Sachin <span style={styles.colorClass}>Tendulkar,</span></h3>
                   <h4>
                      is a former Indian cricketer, widely
@@ -35,7 +35,7 @@ export class QuoteBoard extends Component {
               <Col sm={4}>
                 {" "}
                 <Container style={styles.imageContainerClass}>
-                <img alt="" src={stats} width="420" height="420" className="" />
+                <img alt="" src={stats} width="350" height="350" className="" />
                 </Container>
               </Col>
             </Row>
