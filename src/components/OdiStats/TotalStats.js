@@ -27,7 +27,7 @@ const TotalStats = () => {
         <TimelineODI data={inningsRuns} />
         <p className="pt-4">
           This is the whole ODI timeline for Sachin Tendulkar. It is full of
-          high peaks which are a great symbol <br /> of the significant
+          high peaks which are a great symbol of the significant
           contribution he has made for Team India. It has a total of 463
           matches. <br />
           This looks a bit cluttered so let's{" "}

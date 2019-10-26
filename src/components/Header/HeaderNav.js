@@ -7,7 +7,7 @@ import "../../App.css";
 const styles = {
   colorClass: { color: "#2026D2" },
   boldClass: { "font-weight": "900" },
-  paddingClass: { "padding-left": "160px" }
+  paddingClass: {  }
 };
 
 export class HeaderNav extends Component {
@@ -15,7 +15,7 @@ export class HeaderNav extends Component {
     return (
       <div>
         <Navbar expand="lg" bg="color" variant="dark">
-          <Navbar.Brand style={styles.paddingClass}>
+          <Navbar.Brand className="pl-4">
             <img
               alt=""
               src={srtlogo}
