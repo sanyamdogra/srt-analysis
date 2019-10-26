@@ -12,6 +12,14 @@ import {
 } from "../../model/functions";
 import TimelineODI from "./TimelineODI";
 
+
+const styles = {
+  containerClass: { "padding-bottom":"2%" },
+  colorClass: { color: "#2026D2" },
+  boldClass: { "font-weight": "900" },
+  imageContainerClass:{"padding-top": "20px"}
+};
+
 const TotalStats = () => {
   let data = getTotalStats();
   let inningsRuns = getRunsPerInnings();
@@ -20,11 +28,13 @@ const TotalStats = () => {
 
   return (
     <div>
-      <Container>
+      <Container style={styles.containerClass}>
         <h3 style={{ fontWeight: "bold" }} fontWeight="bold">
           ODI <span style={{ color: "#2026D2" }}>Timeline</span>
         </h3>
+        <div>
         <TimelineODI data={inningsRuns} />
+        </div>
         <p className="pt-4">
           This is the whole ODI timeline for Sachin Tendulkar. It is full of
           high peaks which are a great symbol of the significant
@@ -104,7 +114,7 @@ const TotalStats = () => {
           <span style={{ color: "#2026D2", fontWeight: "bold" }}>
             GOD of Cricket
           </span>
-          , if not scroll more!
+          , if not then scroll more!
         </p>
       </Container>
     </div>

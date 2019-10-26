@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import HeaderNav from "./components/Header/HeaderNav";
 import QuoteBoard from "./components/Quote/QuoteBoard";
 import TotalStats from "./components/OdiStats/TotalStats";
+import TeamAnalysis from "./components/TeamAnalysis/TeamAnalysis";
 
 function App() {
   return (
@@ -12,8 +13,8 @@ function App() {
       <HeaderNav />
       <div className="App">
         <QuoteBoard />
-
         <TotalStats />
+        <TeamAnalysis/>
       </div>
     </div>
   );
