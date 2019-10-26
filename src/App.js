@@ -3,9 +3,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import HeaderNav from "./components/Header/HeaderNav";
-import QuoteBoard from "./components/Quote/QuoteBoard"
+import QuoteBoard from "./components/Quote/QuoteBoard";
 import TotalStats from "./components/OdiStats/TotalStats";
-
 
 function App() {
   return (
@@ -13,8 +12,7 @@ function App() {
       <HeaderNav />
       <div className="App">
         <QuoteBoard />
-        <TotalStats />
-        <TotalStats />
+
         <TotalStats />
       </div>
     </div>

@@ -1,5 +1,7 @@
 import data from "./data.json";
 
+// FUNCTIONS FOR TOTAL ANALYSIS
+
 // Function to get Total ODI Stats
 const getTotalStats = () => {
   let totalRuns = 0;
@@ -29,13 +31,46 @@ const getRunsPerInnings = () => {
   const runs = [];
   for (let i = 0; i < data.length; i++) {
     runs.push({
-      name: `Match${i + 1}`,
+      name: `Match ${i + 1}`,
       runs: data[i].batting_score
     });
   }
 
   return runs;
 };
+
+// Function to get Total ODI wins when SRT scored above 30 and Number of Centuries
+const getTotalWinsSRT = () => {
+  let totalWins = 0;
+  let totalCenturies = 0;
+  let totalDoubleCenturies = 0;
+  let totalHalfCenturies = 0;
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].batting_score !== "TDNB" && data[i].batting_score !== "DNB") {
+      if (
+        parseInt(data[i].batting_score) >= 30 &&
+        data[i].match_result === "won"
+      ) {
+        totalWins++;
+      }
+      if (parseInt(data[i].batting_score) >= 100) {
+        totalCenturies++;
+      }
+      if (
+        parseInt(data[i].batting_score) >= 50 &&
+        parseInt(data[i].batting_score) < 100
+      ) {
+        totalHalfCenturies++;
+      }
+      if (parseInt(data[i].batting_score) >= 200) {
+        totalDoubleCenturies++;
+      }
+    }
+  }
+  return { totalWins, totalCenturies, totalDoubleCenturies, totalHalfCenturies };
+};
+
+// FUNCTIONS FOR SPECIFIC TEAM ANALYSIS
 
 //Return Total runs, catches and wickets against a team (for small cards)
 const getSummarizedStats = team => {
@@ -179,6 +214,7 @@ const teams = () => {
 export {
   getTotalStats,
   getRunsPerInnings,
+  getTotalWinsSRT,
   teams,
   getSummarizedStats,
   getRunsPerTeam,

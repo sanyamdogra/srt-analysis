@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import {
   LineChart,
   XAxis,
@@ -11,27 +10,25 @@ import {
 import { Container } from "react-bootstrap";
 
 const styles = {
-  containerClass: { height: "200px", width: "200px" },
+  containerClass: {"padding-bottom":"20px"},
   colorClass: { color: "#2026D2" },
   boldClass: { "font-weight": "900" },
   imageContainerClass: { "padding-top": "20px" },
   labelClass: {
     position: "absolute",
-    left: "70%",
+    left: "45%",
     color: "#2026D2"
   }
 };
-export class Analysis extends Component {
+
+export class TimelineODI extends Component {
   render() {
     return (
       <div>
-        {/* <h3 style={{ fontWeight: "bold" }} fontWeight="bold">
-          Yearly <span style={styles.colorClass}>Stats</span>
-        </h3> */}
         <Container style={styles.containerClass}>
-          <LineChart width={600} height={200} data={this.props.data}>
+          <LineChart width={1000} height={250} data={this.props.data}>
             <XAxis dataKey="name" />
-            <YAxis />
+            <YAxis domain={[0, 200]} />
             <Tooltip />
             <CartesianGrid stroke="#eee" strokeDasharray="12 12" />
             <Line
@@ -43,12 +40,11 @@ export class Analysis extends Component {
               activeDot={{ r: 8 }}
             />
           </LineChart>
+          <div style={styles.labelClass}>Total Matches</div>
         </Container>
-
-        {/* <CalculatedStats team={props.team}/> */}
       </div>
     );
   }
 }
 
-export default Analysis;
+export default TimelineODI;
