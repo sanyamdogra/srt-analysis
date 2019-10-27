@@ -5,10 +5,11 @@ import "../../App.css";
 import stats from "../../assets/stats.svg";
 
 const styles = {
-  containerClass: { height: "48%", width: "78%", "padding-top": "15%" },
+  containerClass: { "padding-top": "15%" },
   colorClass: { color: "#2026D2" },
   boldClass: { "font-weight": "900" },
-  imageContainerClass:{"padding-top": "20px"}
+  imageContainerClass:{"padding-top": "20%"}
+  //style={styles.containerClass}
 };
 
 export class QuoteBoard extends Component {
@@ -16,10 +17,10 @@ export class QuoteBoard extends Component {
     return (
       <div>
         <Fade delay={9000}>
-          <Container fluid>
+          <Container className="container-quote">
             <Row>
               <Col sm={8}>
-                <Container style={styles.containerClass}>
+                <Container  style={styles.containerClass}>
                   <div/>
                   <h3 style={styles.boldClass}>Sachin <span style={styles.colorClass}>Tendulkar,</span></h3>
                   <h4>
@@ -35,7 +36,7 @@ export class QuoteBoard extends Component {
               <Col sm={4}>
                 {" "}
                 <Container style={styles.imageContainerClass}>
-                <img alt="" src={stats} width="350" height="350" className="" />
+                <img alt="" src={stats} width="350" height="250" className="" />
                 </Container>
               </Col>
             </Row>

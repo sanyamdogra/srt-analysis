@@ -20,3 +20,21 @@
   font-size: 1.5em;
   text-align: center;
 }
+.container-quote {
+  height: 40%;
+  width: 100%;
+  padding-bottom: 2.5%;
+}
+
+@media screen and (max-width: 800px) {
+  .App {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .container-quote {
+    height: 48%;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+}

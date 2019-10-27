@@ -4,11 +4,6 @@ import srtlogo from "../../assets/stlogo.png";
 
 import "../../App.css";
 
-const styles = {
-  colorClass: { color: "#2026D2" },
-  boldClass: { "font-weight": "900" },
-  paddingClass: {  }
-};
 
 export class HeaderNav extends Component {
   render() {
