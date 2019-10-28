@@ -91,7 +91,7 @@ const TotalStats = () => {
           </ListGroup.Item>
           <ListGroup.Item>
             He is the first player to score{" "}
-            <span style={{ color: "#2026D2", fontWeight: "bold" }}>{200}</span>{" "}
+            <span style={{ color: "#2026D2", fontWeight: "bold" }}>{data.maxRun}</span>{" "}
             in ODIs and that too not out.
           </ListGroup.Item>
           <ListGroup.Item>

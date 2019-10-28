@@ -1,7 +1,6 @@
-
 .react-select__control {
   min-width: 230px;
-  border: solid #2026D2 1.5px !important;
+  border: solid #2026d2 1.5px !important;
 }
 
 .react-select__input {
@@ -10,7 +9,7 @@
 }
 
 .react-select__placeholder {
-  color: #2026D2 !important;
+  color: #2026d2 !important;
   font-weight: 600;
 }
 @media (max-width: 992px) {
@@ -25,7 +24,6 @@
   }
 }
 
-
-.react-select__indicators{
+.react-select__indicators {
   display: none;
 }

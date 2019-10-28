@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import SelectTeam from "./SelectTeam";
 import TeamLineGraph from "./TeamLineGraph";
 import TeamPieChart from "./TeamPieChart";
+import TeamwiseStats from "./TeamwiseStats";
 
 const styles = {
   containerClass: { paddingBottom: "2%", paddingTop: "2%" },
@@ -53,11 +54,7 @@ export class TeamAnalysis extends Component {
               <TeamPieChart team={this.state.selectedTeamParent} />
             </Col>
           </Row>
-          <Row>
-            <Col sm>sm=true</Col>
-            <Col sm>sm=true</Col>
-            <Col sm>sm=true</Col>
-          </Row>
+          <TeamwiseStats team={this.state.selectedTeamParent} />
         </Container>
       </div>
     );

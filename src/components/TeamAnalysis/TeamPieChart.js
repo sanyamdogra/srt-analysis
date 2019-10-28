@@ -3,7 +3,7 @@ import * as Recharts from "recharts";
 import { getMatchResultsPerTeam } from "../../model/functions";
 import "../../App.css";
 
-const { PieChart, Pie, Cell } = Recharts;
+const { PieChart, Pie, Cell, Tooltip } = Recharts;
 
 const TeamPieChart = props => {
   const result = getMatchResultsPerTeam(props.team);
@@ -17,17 +17,9 @@ const TeamPieChart = props => {
 
   return (
     <React.Fragment>
-      {/* <div
-        style={{
-          fontSize: "20px",
-          marginBottom: "10px",
-          paddingTop: "5%",
-        }}
-      >
-        Match <span style={{ color: "#2026D2" }}>Stats</span>
-      </div> */}
-      <div className="pie-info-heading"
-        >Match<span style={{ color: "#2026D2" }}> Stats</span></div>
+      <div className="pie-info-heading">
+        Match<span style={{ color: "#2026D2" }}> Stats</span>
+      </div>
       <div className="pie-info">
         <div
           className="ssp-400"
@@ -95,8 +87,8 @@ const TeamPieChart = props => {
             />
           ))}
         </Pie>
+        <Tooltip/>
       </PieChart>
-      
     </React.Fragment>
   );
 };

@@ -8,7 +8,7 @@ const styles = {
   containerClass: { paddingTop: "3%", paddingBottom: "3%" },
   colorClass: { color: "#2026D2" },
   boldClass: { fontWeight: "900" },
-  warningClass: { color: "red", fontWeight: "900", paddingBottom:'10%' }
+  warningClass: { color: "red", fontWeight: "900", paddingBottom: "10%" }
 };
 
 const TeamLineGraph = props => {
@@ -20,7 +20,7 @@ const TeamLineGraph = props => {
         style={{
           fontSize: "20px",
           marginBottom: "10px",
-          fontWeight:"bold"
+          fontWeight: "bold"
         }}
       >
         Runs per match against{" "}
@@ -52,11 +52,10 @@ const TeamLineGraph = props => {
         </LineChart>
 
         <span
-          className="ssp-400"
           style={{
-            color: "white",
-            position: "absolute",
-            bottom: "7px",
+            color: "#171717",
+            position: "relative",
+            top: "5px",
             left: "47%"
           }}
         >
