@@ -26,10 +26,10 @@ export class TimelineODI extends Component {
   render() {
     return (
       <div>
-        <div className="d-xl-none pt-3 red" style={styles.warningClass}>
+        <div className="d-xl-none  pt-3 red" style={styles.warningClass}>
           Please switch to a larger screen to view the Timeline!
         </div>
-        <div className="d-none d-md-block ">
+        <div className="d-none d-xl-block">
           <Container style={styles.containerClass}>
             <LineChart width={1000} height={250} data={this.props.data}>
               <XAxis dataKey="name" />

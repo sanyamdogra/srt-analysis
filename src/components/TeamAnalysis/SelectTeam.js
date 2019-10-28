@@ -43,8 +43,8 @@ export class SelectTeam extends Component {
           options={teamListFull}
           placeholder={selectedTeam}
           classNamePrefix={"react-select"}
-          isClearable="true"
-          isSearchable="false"
+          clearable={false}
+          isSearchable={false}
           name="method"
         />
       </div>

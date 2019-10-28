@@ -2,12 +2,14 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import SelectTeam from "./SelectTeam";
 import TeamLineGraph from "./TeamLineGraph";
+import TeamPieChart from "./TeamPieChart";
 
 const styles = {
   containerClass: { paddingBottom: "2%", paddingTop: "2%" },
   colorClass: { color: "#2026D2" },
   boldClass: { fontWeight: "900" },
-  imageContainerClass: { paddingTop: "20px" }
+  imageContainerClass: { paddingTop: "20px" },
+  selectContainerClass: { paddingBottom: "4%" }
 };
 
 export class TeamAnalysis extends Component {
@@ -15,8 +17,8 @@ export class TeamAnalysis extends Component {
     super(props);
     this.state = {
       selectedTeamParent: "Australia"
-  };
-     }
+    };
+  }
   setTeam = selectedTeam => {
     this.setState({
       selectedTeamParent: selectedTeam.value
@@ -32,7 +34,7 @@ export class TeamAnalysis extends Component {
             Team-wise <span style={{ color: "#2026D2" }}>Analysis</span>
           </h3>
         </Container>
-        <Container>
+        <Container style={styles.selectContainerClass}>
           <Row>
             <Col md="auto">
               <h6>Selected Team: </h6>
@@ -47,7 +49,9 @@ export class TeamAnalysis extends Component {
             <Col sm={8}>
               <TeamLineGraph team={this.state.selectedTeamParent} />
             </Col>
-            <Col sm={4}>sm=4</Col>
+            <Col sm={4}>
+              <TeamPieChart team={this.state.selectedTeamParent} />
+            </Col>
           </Row>
           <Row>
             <Col sm>sm=true</Col>
