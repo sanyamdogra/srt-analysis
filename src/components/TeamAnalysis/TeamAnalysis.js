@@ -58,7 +58,10 @@ export class TeamAnalysis extends Component {
               </Fade>
             </Col>
           </Row>
-          <TeamwiseStats team={this.state.selectedTeamParent} />
+          <Container style={styles.selectContainerClass}>
+            {" "}
+            <TeamwiseStats team={this.state.selectedTeamParent} />
+          </Container>
         </Container>
       </div>
     );
