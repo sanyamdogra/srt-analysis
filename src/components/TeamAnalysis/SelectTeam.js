@@ -1,18 +1,10 @@
 import React, { Component } from "react";
 import Select from "react-select";
 
-import { teams, teamName, getSummarizedStats } from "../../model/functions";
+import { teamName } from "../../model/functions";
 import "./react-select-style.css";
-const options = [
-  { value: "chocolate", label: "Australia" },
-  { value: "strawberry", label: "Strawberry" },
-  { value: "vanilla", label: "Vanilla" }
-];
 
 let teamListFull = teamName();
-let summarizedStats = getSummarizedStats("U.A.E.");
-
-console.log(summarizedStats);
 
 export class SelectTeam extends Component {
   constructor(props) {
@@ -26,10 +18,7 @@ export class SelectTeam extends Component {
   setTeam(teamListFull) {
     this.setState({
       selectedTeam: teamListFull
-      
     });
-    console.log(teamListFull);
-    
     this.props.callbackFromParent(teamListFull);
   }
   render() {

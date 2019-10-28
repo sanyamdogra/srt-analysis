@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import CardTile from "./CardTile";
 import Fade from "react-reveal";
-import Analysis from "../Analysis";
 import ListGroup from "react-bootstrap/ListGroup";
 
 import {
@@ -12,19 +11,17 @@ import {
 } from "../../model/functions";
 import TimelineODI from "./TimelineODI";
 
-
 const styles = {
-  containerClass: { "paddingBottom":"2%" },
+  containerClass: { paddingBottom: "2%" },
   colorClass: { color: "#2026D2" },
-  boldClass: { "fontWeight": "900" },
-  imageContainerClass:{"paddingTop": "20px"}
+  boldClass: { fontWeight: "900" },
+  imageContainerClass: { paddingTop: "20px" }
 };
 
 const TotalStats = () => {
   let data = getTotalStats();
   let inningsRuns = getRunsPerInnings();
   let wins = getTotalWinsSRT();
-  console.log(wins);
 
   return (
     <div>
@@ -33,13 +30,12 @@ const TotalStats = () => {
           ODI <span style={{ color: "#2026D2" }}>Timeline</span>
         </h3>
         <div>
-        <TimelineODI data={inningsRuns} />
+          <TimelineODI data={inningsRuns} />
         </div>
         <p className="pt-4">
           This is the whole ODI timeline for Sachin Tendulkar. It is full of
-          high peaks which are a great symbol of the significant
-          contribution he has made for Team India. It has a total of 463
-          matches. <br />
+          high peaks which are a great symbol of the significant contribution he
+          has made for Team India. It has a total of 463 matches. <br />
           This looks a bit cluttered so let's{" "}
           <span style={{ color: "#2026D2" }}>analyse</span> it.
         </p>
@@ -70,11 +66,6 @@ const TotalStats = () => {
               </div>
             </Fade>
           </Col>
-          {/* <Col sm="true">
-            <div className="p-3">
-              <Analysis data={inningsRuns} />
-            </div>
-          </Col> */}
         </Row>
         <p className="pt-3">
           After my detailed analysis on the ODI data, I found that
@@ -91,7 +82,9 @@ const TotalStats = () => {
           </ListGroup.Item>
           <ListGroup.Item>
             He is the first player to score{" "}
-            <span style={{ color: "#2026D2", fontWeight: "bold" }}>{data.maxRun}</span>{" "}
+            <span style={{ color: "#2026D2", fontWeight: "bold" }}>
+              {data.maxRun}
+            </span>{" "}
             in ODIs and that too not out.
           </ListGroup.Item>
           <ListGroup.Item>

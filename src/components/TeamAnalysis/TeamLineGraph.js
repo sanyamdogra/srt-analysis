@@ -13,7 +13,6 @@ const styles = {
 
 const TeamLineGraph = props => {
   const data = getRunsPerTeam(props.team);
-  console.log(props.team);
   return (
     <React.Fragment>
       <div
