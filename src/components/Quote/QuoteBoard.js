@@ -5,10 +5,10 @@ import "../../App.css";
 import stats from "../../assets/stats.svg";
 
 const styles = {
-  containerClass: { "padding-top": "15%" },
+  containerClass: { "paddingTop": "15%" },
   colorClass: { color: "#2026D2" },
-  boldClass: { "font-weight": "900" },
-  imageContainerClass:{"padding-top": "20%"}
+  boldClass: { "fontWeight": "900" },
+  imageContainerClass:{"paddingTop": "20%"}
   //style={styles.containerClass}
 };
 

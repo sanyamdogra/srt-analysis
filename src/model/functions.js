@@ -2,6 +2,26 @@ import data from "./data.json";
 
 // FUNCTIONS FOR TOTAL ANALYSIS
 
+//Function to get team names
+
+const teamName = () => {
+  const names = [];
+  for (let i = 0; i < data.length; i++) {
+    if (names.indexOf(data[i].opposition) === -1) {
+      names.push({
+        label: data[i].opposition,
+        value: data[i].opposition
+      });
+    }
+  }
+
+  function uniqByKeepLast(a, key) {
+    let distinctNames = [...new Map(a.map(x => [key(x), x])).values()];
+    return distinctNames;
+  }
+  return uniqByKeepLast(names, it => it.value);
+};
+
 // Function to get Total ODI Stats
 const getTotalStats = () => {
   let totalRuns = 0;
@@ -67,7 +87,12 @@ const getTotalWinsSRT = () => {
       }
     }
   }
-  return { totalWins, totalCenturies, totalDoubleCenturies, totalHalfCenturies };
+  return {
+    totalWins,
+    totalCenturies,
+    totalDoubleCenturies,
+    totalHalfCenturies
+  };
 };
 
 // FUNCTIONS FOR SPECIFIC TEAM ANALYSIS
@@ -216,6 +241,7 @@ export {
   getRunsPerInnings,
   getTotalWinsSRT,
   teams,
+  teamName,
   getSummarizedStats,
   getRunsPerTeam,
   getMatchResultsPerTeam,

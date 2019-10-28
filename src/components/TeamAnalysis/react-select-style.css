@@ -1,0 +1,26 @@
+
+.react-select__control {
+  min-width: 230px;
+  border: solid #2026D2 1px !important;
+}
+
+.react-select__input {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.react-select__placeholder {
+  color: #2026D2 !important;
+  font-weight: 600;
+}
+@media (max-width: 992px) {
+  .react-select__control {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 380px) {
+  .react-select__control {
+    min-width: auto;
+  }
+}

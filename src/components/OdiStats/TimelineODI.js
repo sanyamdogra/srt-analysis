@@ -10,11 +10,11 @@ import {
 import { Container } from "react-bootstrap";
 
 const styles = {
-  containerClass: { "padding-top": "3%", "padding-bottom": "3%" },
+  containerClass: { "paddingTop": "3%", "paddingBottom": "3%" },
   colorClass: { color: "#2026D2" },
-  boldClass: { "font-weight": "900" },
-  warningClass:{ color: "red", "font-weight": "900"},
-  imageContainerClass: { "padding-top": "20px" },
+  boldClass: { "fontWeight": "900" },
+  warningClass:{ color: "red", "fontWeight": "900"},
+  imageContainerClass: { "paddingTop": "20px" },
   labelClass: {
     position: "absolute",
     left: "45%",

@@ -14,10 +14,10 @@ import TimelineODI from "./TimelineODI";
 
 
 const styles = {
-  containerClass: { "padding-bottom":"2%" },
+  containerClass: { "paddingBottom":"2%" },
   colorClass: { color: "#2026D2" },
-  boldClass: { "font-weight": "900" },
-  imageContainerClass:{"padding-top": "20px"}
+  boldClass: { "fontWeight": "900" },
+  imageContainerClass:{"paddingTop": "20px"}
 };
 
 const TotalStats = () => {
