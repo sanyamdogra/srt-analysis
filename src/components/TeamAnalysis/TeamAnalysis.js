@@ -4,7 +4,6 @@ import SelectTeam from "./SelectTeam";
 import TeamLineGraph from "./TeamLineGraph";
 import TeamPieChart from "./TeamPieChart";
 import TeamwiseStats from "./TeamwiseStats";
-import Fade from "react-reveal";
 
 const styles = {
   containerClass: { paddingBottom: "2%", paddingTop: "2%" },
@@ -48,14 +47,10 @@ export class TeamAnalysis extends Component {
         <Container>
           <Row>
             <Col sm={8}>
-              <Fade left delay={9000}>
-                <TeamLineGraph team={this.state.selectedTeamParent} />
-              </Fade>
+              <TeamLineGraph team={this.state.selectedTeamParent} />
             </Col>
             <Col sm={4}>
-              <Fade right delay={9000}>
-                <TeamPieChart team={this.state.selectedTeamParent} />
-              </Fade>
+              <TeamPieChart team={this.state.selectedTeamParent} />
             </Col>
           </Row>
           <Container style={styles.selectContainerClass}>
