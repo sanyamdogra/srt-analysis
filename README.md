@@ -15,7 +15,8 @@ Use the given data on Sachin Tendulkar's entire career to prove or disprove the 
 As I have applied for Frontend Engineering Internship at Atlan, I have tried to provide an Atlanish look and feel to it. I have tried to replicate the same color scheme.
 I have used JS functions to calculate the stats and Recharts to visualize these results.
 The frontend is made on React to draw a postive conclusion that Sachin is indeed the greatest cricketer of all time.
-
+* Whole project is jQuery free.
+* I have also visualized the results.
 ### Technologies Used
 
 * Architecture used
