@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../../App.css";
 
-export class Footer extends Component {
+export class FooterComponet extends Component {
   render() {
     return (
       <div class="footer">
@@ -11,4 +11,4 @@ export class Footer extends Component {
   }
 }
 
-export default Footer;
+export default FooterComponet;

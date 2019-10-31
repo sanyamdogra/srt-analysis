@@ -6,7 +6,7 @@ import HeaderNav from "./components/Header/HeaderNav";
 import QuoteBoard from "./components/Quote/QuoteBoard";
 import TotalStats from "./components/OdiStats/TotalStats";
 import TeamAnalysis from "./components/TeamAnalysis/TeamAnalysis";
-import Footer from "./components/Footer/Footer";
+import FooterComponent from "./components/FooterComponent/FooterComponent";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <TotalStats />
         <TeamAnalysis />
       </div>
-      <Footer />
+      <FooterComponent />
     </div>
   );
 }
