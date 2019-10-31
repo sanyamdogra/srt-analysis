@@ -29,7 +29,7 @@ export class QuoteBoard extends Component {
                   </h4>
 
                   <Col >
-                    <h5 style={styles.colorClass} className='float-sm-right'>- Statistics</h5>
+                    <h5 style={styles.colorClass} className='float-sm-right pr-1'>- Statistics</h5>
                   </Col>
                 </Container>
               </Col>

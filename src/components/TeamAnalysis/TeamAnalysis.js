@@ -34,10 +34,16 @@ export class TeamAnalysis extends Component {
             Team-wise <span style={{ color: "#2026D2" }}>Analysis</span>
           </h3>
         </Container>
+
         <Container style={styles.selectContainerClass}>
+        <Row>
+        <Col md="auto">
+          <p>Select your desired team from the list to visualize Sachin Tendulkar's performance with them.</p>
+          </Col>
+          </Row>
           <Row>
             <Col md="auto">
-              <h6>Selected Team: </h6>
+              <h6 style={{"fontWeight":"bold"}}>Selected Team: </h6>
             </Col>
             <Col xs={6}>
               <SelectTeam callbackFromParent={this.setTeam} />

@@ -105,7 +105,7 @@ const TotalStats = () => {
         <p className="pt-3">
           These stats are enough to proof that he is{" "}
           <span style={{ color: "#2026D2", fontWeight: "bold" }}>
-            GOD of Cricket
+            The GOD of Cricket
           </span>
           , if not then scroll more!
         </p>
