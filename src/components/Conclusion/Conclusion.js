@@ -79,7 +79,7 @@ export class Conclusion extends Component {
                 style={{ fontWeight: "bold" }}
                 className="justify-content-center pb-3"
               >
-                Calmness, longevity, and consistency make him{" "}
+                Calmness, longevity, and consistency makes him{" "}
                 <span style={{ color: "#F1295C" }}>the greatest.</span>
               </h3>
             </Col>

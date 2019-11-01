@@ -25,14 +25,6 @@
   width: 100%;
   padding-bottom: 2.5%;
 }
-.image-vector {
-  width: 350px;
-  height: 250px;
-}
-.pie-chart-res {
-  width: 400;
-  height: 400;
-}
 
 @media screen and (max-width: 800px) {
   .App {
@@ -44,14 +36,6 @@
     width: 100%;
     padding-top: 3%;
     padding-bottom: 3%;
-  }
-  .image-vector {
-    width: 250px;
-    height: 150px;
-  }
-  .pie-chart-res {
-    width: 250px;
-    height: 150px;
   }
 }
 .pie-info {
