@@ -7,7 +7,7 @@ const TeamwiseStats = props => {
   return (
     <div>
       <p className="pt-3">
-        Team-wise summary of Sachin Tendulkar's performace is given below,
+        Team-wise summary of Sachin Tendulkar's performance is given below,
         <br />
       </p>
       <ListGroup>

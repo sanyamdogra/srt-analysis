@@ -18,7 +18,7 @@ export class HeaderNav extends Component {
               height="50"
               className="d-inline-block align-top "
             />
-            <span className="Header-text p-3">{"s r t"}</span>
+            <span className="Header-text p-3" style={{fontWeight:"bold"}}>{"s r t"}</span>
             <span className="justify-content-end">analysis</span>
           </Navbar.Brand>
         </Navbar>

@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import ListGroup from "react-bootstrap/ListGroup";
+import Fade from "react-reveal";
 
 const styles = {
-  containerClass: { paddingBottom: "2%", paddingTop: "2%" },
+  containerClass: { paddingBottom: "1%", paddingTop: "2%" },
   colorClass: { color: "#2026D2" },
   boldClass: { fontWeight: "900" },
   imageContainerClass: { paddingTop: "20px" },
-  selectContainerClass: { paddingBottom: "4%" }
+  selectContainerClass: { paddingBottom: "1%" }
 };
 
 export class Conclusion extends Component {
@@ -22,26 +24,65 @@ export class Conclusion extends Component {
         <Container style={styles.selectContainerClass}>
           <Row>
             <Col md="auto">
-              <p>
-              Work in Progress!
-                {/* Tendulkar gave character, inspiration and confidence to the
-                future generation. He taught how to fight fire with fire and his
-                ‘desert storm’ in Sharjah in 1998 made every Indian stand with
-                pride. When a match started, every Indian believed that they can
-                win. It is this confidence that Tendulkar injected into the
-                fibre of not just the cricket team but also to the whole nation.
-                He backed up his consistency on the field with a dignified
-                conduct outside the field. This is what Tendulkar has given in
-                addition to all the other traditional measures that great
-                players are evaluated. Look at the Australian, Windies,
-                Srilanka, South Africa teams today. They don’t have the same
-                confidence that the Indian team has today. */}
-              </p>
+              <p>These figures are for ODI, Test and First-class cricket.</p>
             </Col>
           </Row>
           <Row>
-            <Col md="auto"></Col>
-            <Col xs={6}></Col>
+            <Col md="auto" className="pt-4 pb-4">
+              <Fade delay={9000} left>
+                <h4 style={{ color: "#2026D2" }}>
+                  18426 + 15921 + 25396 ={" "}
+                  <span style={{ fontWeight: "bold" }}>59743</span>
+                </h4>
+              </Fade>
+              <ListGroup>
+                <ListGroup.Item>
+                  When you score as many runs as he has in ODI, Test and
+                  First-class cricket as he has done, it makes him arguably the
+                  greatest player ever.
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  Till date, he holds so many batting records.
+                </ListGroup.Item>
+              </ListGroup>
+            </Col>
+            <Col md="auto" className="pt-4">
+              <Fade delay={9000} right>
+                <h4 style={{ color: "#2026D2" }}>
+                  463 + 200 + 310 ={" "}
+                  <span style={{ fontWeight: "bold" }}>973</span>
+                </h4>
+              </Fade>
+              <ListGroup>
+                <ListGroup.Item>
+                  Tendulkar has played more matches at the highest level than
+                  any other player.
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  He has played in many forms of cricket and was consistent in
+                  each one of them.
+                </ListGroup.Item>
+              </ListGroup>
+            </Col>
+          </Row>
+          <p>
+            <small>
+              * This section has been formed with the help of external searches
+              as well as with the data provided.
+            </small>
+          </p>
+        </Container>
+        <Container>
+          <Row>
+            <Col md={"auto"}>
+              <h3
+                style={{ fontWeight: "bold" }}
+                className="justify-content-center pb-3"
+              >
+                Calmness, longevity, and consistency make him{" "}
+                <span style={{ color: "#F1295C" }}>the greatest.</span>
+              </h3>
+            </Col>
           </Row>
         </Container>
       </div>

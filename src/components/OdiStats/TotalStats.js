@@ -37,7 +37,7 @@ const TotalStats = () => {
           high peaks which are a great symbol of the significant contribution he
           has made for Team India. It has a total of 463 matches. <br />
           This looks a bit cluttered so let's{" "}
-          <span style={{ color: "#2026D2" }}>analyse</span> it.
+          <span style={{ color: "#2026D2" }}>analyze</span> it.
         </p>
       </Container>
       <Container>
@@ -68,7 +68,7 @@ const TotalStats = () => {
           </Col>
         </Row>
         <p className="pt-3">
-          After my detailed analysis on the ODI data, I found that
+          After my detailed analysis of the ODI data, I found that
           <br />
         </p>
         <ListGroup>
@@ -103,9 +103,9 @@ const TotalStats = () => {
           </ListGroup.Item>
         </ListGroup>
         <p className="pt-3">
-          These stats are enough to proof that he is{" "}
+          These stats are enough to prove that he is{" "}
           <span style={{ color: "#2026D2", fontWeight: "bold" }}>
-            The GOD of Cricket
+            the GOD of Cricket
           </span>
           , if not then scroll more!
         </p>
