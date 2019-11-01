@@ -22,7 +22,6 @@ const TeamPieChart = props => {
       </div>
       <div className="pie-info">
         <div
-          className="ssp-400"
           style={{
             display: "flex",
             width: "100%",
@@ -37,7 +36,6 @@ const TeamPieChart = props => {
           Won
         </div>
         <div
-          className="ssp-400"
           style={{
             display: "flex",
             width: "100%",
@@ -52,7 +50,6 @@ const TeamPieChart = props => {
           Lost
         </div>
         <div
-          className="ssp-400"
           style={{
             display: "flex",
             width: "100%",
@@ -87,7 +84,7 @@ const TeamPieChart = props => {
             />
           ))}
         </Pie>
-        <Tooltip/>
+        <Tooltip />
       </PieChart>
     </React.Fragment>
   );

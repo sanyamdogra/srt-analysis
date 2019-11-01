@@ -36,7 +36,7 @@ export class QuoteBoard extends Component {
               <Col sm={4}>
                 {" "}
                 <Container style={styles.imageContainerClass}>
-                <img alt="" src={stats} width="350" height="250" className="" />
+                <img alt="" src={stats}  className="image-vector" />
                 </Container>
               </Col>
             </Row>
