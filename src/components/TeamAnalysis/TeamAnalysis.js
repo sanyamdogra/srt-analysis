@@ -7,9 +7,8 @@ import TeamwiseStats from "./TeamwiseStats";
 
 const styles = {
   containerClass: { paddingBottom: "2%", paddingTop: "2%" },
-  colorClass: { color: "#2026D2" },
-  boldClass: { fontWeight: "900" },
-  imageContainerClass: { paddingTop: "20px" },
+  primaryColorClass: { color: "#2026D2" },
+  boldClass: { fontWeight: "bold" },
   selectContainerClass: { paddingBottom: "4%" }
 };
 
@@ -30,20 +29,23 @@ export class TeamAnalysis extends Component {
     return (
       <div>
         <Container style={styles.containerClass}>
-          <h3 style={{ fontWeight: "bold" }} fontWeight="bold">
-            Team-wise <span style={{ color: "#2026D2" }}>Analysis</span>
+          <h3 style={styles.boldClass}>
+            Team-wise <span style={styles.primaryColorClass}>Analysis</span>
           </h3>
         </Container>
 
         <Container style={styles.selectContainerClass}>
-        <Row>
-        <Col md="auto">
-          <p>Select your desired team from the list to visualize Sachin Tendulkar's performance with them.</p>
-          </Col>
+          <Row>
+            <Col md="auto">
+              <p>
+                Select your desired team from the list to visualize Sachin
+                Tendulkar's performance with them.
+              </p>
+            </Col>
           </Row>
           <Row>
             <Col md="auto">
-              <h6 style={{"fontWeight":"bold"}}>Selected Team: </h6>
+              <h6 style={styles.boldClass}>Selected Team: </h6>
             </Col>
             <Col xs={6}>
               <SelectTeam callbackFromParent={this.setTeam} />

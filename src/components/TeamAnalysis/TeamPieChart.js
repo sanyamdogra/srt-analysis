@@ -5,6 +5,18 @@ import "../../App.css";
 
 const { PieChart, Pie, Cell, Tooltip } = Recharts;
 
+const styles = {
+  legendClass: {
+    display: "flex",
+    width: "100%",
+    justifyContent: "flex-start",
+    alignItems: "center"
+  },
+  primaryLegendColor: { backgroundColor: "#2026D2", marginRight: "10px" },
+  secondaryLegendColor: { backgroundColor: "#F1295C", marginRight: "10px" },
+  tertiaryLegendColor: { backgroundColor: "#62E0FB", marginRight: "10px" }
+};
+
 const TeamPieChart = props => {
   const result = getMatchResultsPerTeam(props.team);
   const data = [
@@ -21,46 +33,16 @@ const TeamPieChart = props => {
         Match<span style={{ color: "#2026D2" }}> Stats</span>
       </div>
       <div className="pie-info">
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            justifyContent: "flex-start",
-            alignItems: "center"
-          }}
-        >
-          <div
-            className="pie-color"
-            style={{ backgroundColor: "#2026D2", marginRight: "10px" }}
-          />
+        <div style={styles.legendClass}>
+          <div className="pie-color" style={styles.primaryLegendColor} />
           Won
         </div>
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            justifyContent: "flex-start",
-            alignItems: "center"
-          }}
-        >
-          <div
-            className="pie-color"
-            style={{ backgroundColor: "#F1295C", marginRight: "10px" }}
-          />
+        <div style={styles.legendClass}>
+          <div className="pie-color" style={styles.secondaryLegendColor} />
           Lost
         </div>
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            justifyContent: "flex-start",
-            alignItems: "center"
-          }}
-        >
-          <div
-            className="pie-color"
-            style={{ backgroundColor: "#62E0FB", marginRight: "10px" }}
-          />
+        <div style={styles.legendClass}>
+          <div className="pie-color" style={styles.tertiaryLegendColor} />
           Draw
         </div>
       </div>

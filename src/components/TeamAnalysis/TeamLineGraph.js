@@ -5,9 +5,17 @@ import { getRunsPerTeam } from "../../model/functions";
 const { LineChart, Line, XAxis, YAxis, Tooltip } = Recharts;
 
 const styles = {
-  containerClass: { paddingTop: "3%", paddingBottom: "3%" },
-  colorClass: { color: "#2026D2" },
-  boldClass: { fontWeight: "900" },
+  headingLineClass: {
+    fontSize: "20px",
+    fontWeight: "bold"
+  },
+  lineGraphLegend: {
+    color: "#171717",
+    position: "relative",
+    top: "10px",
+    left: "47%"
+  },
+  primaryColorClass: { color: "#2026D2" },
   warningClass: { color: "red", fontWeight: "900", paddingBottom: "10%" }
 };
 
@@ -15,15 +23,9 @@ const TeamLineGraph = props => {
   const data = getRunsPerTeam(props.team);
   return (
     <React.Fragment>
-      <div
-        style={{
-          fontSize: "20px",
-          marginBottom: "10px",
-          fontWeight: "bold"
-        }}
-      >
+      <div style={styles.headingLineClass}>
         Runs per match against{" "}
-        <span style={{ color: "#2026D2" }}>{props.team}</span>
+        <span style={styles.primaryColorClass}>{props.team}</span>
       </div>
       <div className="d-xl-none  pt-3 pd-3 red" style={styles.warningClass}>
         Please switch to a larger screen to view the Score vs Matches graph!
@@ -49,17 +51,7 @@ const TeamLineGraph = props => {
             activeDot={{ r: 8 }}
           />
         </LineChart>
-
-        <span
-          style={{
-            color: "#171717",
-            position: "relative",
-            top: "5px",
-            left: "47%"
-          }}
-        >
-          Matches
-        </span>
+        <span style={styles.lineGraphLegend}>Matches</span>
       </div>
     </React.Fragment>
   );

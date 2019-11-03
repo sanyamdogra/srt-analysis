@@ -13,9 +13,11 @@ import TimelineODI from "./TimelineODI";
 
 const styles = {
   containerClass: { paddingBottom: "2%" },
-  colorClass: { color: "#2026D2" },
-  boldClass: { fontWeight: "900" },
-  imageContainerClass: { paddingTop: "20px" }
+  primaryColorClass: { color: "#2026D2" },
+  secondaryColorClass: { color: "#F1295C" },
+  primaryBoldColorClass: { color: "#2026D2", fontWeight: "bold" },
+  secondaryBoldColorClass: { color: "#F1295C", fontWeight: "bold" },
+  boldClass: { fontWeight: "bold" }
 };
 
 const TotalStats = () => {
@@ -26,8 +28,8 @@ const TotalStats = () => {
   return (
     <div>
       <Container style={styles.containerClass}>
-        <h3 style={{ fontWeight: "bold" }} fontWeight="bold">
-          ODI <span style={{ color: "#2026D2" }}>Timeline</span>
+        <h3 style={styles.boldClass}>
+          ODI <span style={styles.primaryColorClass}>Timeline</span>
         </h3>
         <div>
           <TimelineODI data={inningsRuns} />
@@ -37,12 +39,12 @@ const TotalStats = () => {
           high peaks which are a great symbol of the significant contribution he
           has made for Team India. It has a total of 463 matches. <br />
           This looks a bit cluttered so let's{" "}
-          <span style={{ color: "#2026D2" }}>analyze</span> it.
+          <span style={styles.primaryColorClass}>analyze</span> it.
         </p>
       </Container>
       <Container>
-        <h3 style={{ fontWeight: "bold" }} fontWeight="bold">
-          ODI <span style={{ color: "#F1295C" }}>Stats</span>
+        <h3 style={styles.boldClass}>
+          ODI <span style={styles.secondaryColorClass}>Stats</span>
         </h3>
         <Row className="justify-content-md-center">
           <Col sm="true">
@@ -74,29 +76,25 @@ const TotalStats = () => {
         <ListGroup>
           <ListGroup.Item>
             India won{" "}
-            <span style={{ color: "#2026D2", fontWeight: "bold" }}>
-              {wins.totalWins}
-            </span>{" "}
+            <span style={styles.primaryBoldColorClass}>{wins.totalWins}</span>{" "}
             times when Sachin Tendulkar scored{" "}
-            <span style={{ color: "#F1295C", fontWeight: "bold" }}>30+</span>.
+            <span style={styles.secondaryBoldColorClass}>30+</span>.
           </ListGroup.Item>
           <ListGroup.Item>
             He is the first player to score{" "}
-            <span style={{ color: "#2026D2", fontWeight: "bold" }}>
-              {data.maxRun}
-            </span>{" "}
-            in ODIs and that too not out.
+            <span style={styles.primaryBoldColorClass}>{data.maxRun}</span> in
+            ODIs and that too not out.
           </ListGroup.Item>
           <ListGroup.Item>
             He has scored{" "}
-            <span style={{ color: "#2026D2", fontWeight: "bold" }}>
+            <span style={styles.primaryBoldColorClass}>
               {wins.totalCenturies}
             </span>{" "}
             centuries.
           </ListGroup.Item>
           <ListGroup.Item>
             He has scored{" "}
-            <span style={{ color: "#2026D2", fontWeight: "bold" }}>
+            <span style={styles.primaryBoldColorClass}>
               {wins.totalHalfCenturies}
             </span>{" "}
             half-centuries.
@@ -104,10 +102,8 @@ const TotalStats = () => {
         </ListGroup>
         <p className="pt-3">
           These stats are enough to prove that he is{" "}
-          <span style={{ color: "#2026D2", fontWeight: "bold" }}>
-            the GOD of Cricket
-          </span>
-          , if not then scroll more!
+          <span style={styles.primaryBoldColorClass}>the GOD of Cricket</span>,
+          if not then scroll more!
         </p>
       </Container>
     </div>

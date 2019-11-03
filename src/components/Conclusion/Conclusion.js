@@ -5,10 +5,11 @@ import Fade from "react-reveal";
 
 const styles = {
   containerClass: { paddingBottom: "1%", paddingTop: "2%" },
-  colorClass: { color: "#2026D2" },
-  boldClass: { fontWeight: "900" },
-  imageContainerClass: { paddingTop: "20px" },
-  selectContainerClass: { paddingBottom: "1%" }
+  primaryColorClass: { color: "#2026D2" },
+  secondaryColorClass: { color: "#F1295C" },
+  boldClass: { fontWeight: "bold" },
+  dataContainerClass: { paddingBottom: "1%" },
+  quoteContainerClass: { paddingBottom: "4%", paddingTop: "3%" }
 };
 
 export class Conclusion extends Component {
@@ -16,12 +17,12 @@ export class Conclusion extends Component {
     return (
       <div>
         <Container style={styles.containerClass}>
-          <h3 style={{ fontWeight: "bold" }} fontWeight="bold">
-            Conclusion <span style={{ color: "#2026D2" }}>Points</span>
+          <h3 style={styles.boldClass}>
+            Conclusion <span style={styles.primaryColorClass}>Points</span>
           </h3>
         </Container>
 
-        <Container style={styles.selectContainerClass}>
+        <Container style={styles.dataContainerClass}>
           <Row>
             <Col md="auto">
               <p>These figures are for ODI, Test and First-class cricket.</p>
@@ -30,9 +31,9 @@ export class Conclusion extends Component {
           <Row>
             <Col md="auto" className="pt-4 pb-4">
               <Fade delay={9000} left>
-                <h4 style={{ color: "#2026D2" }}>
+                <h4 style={styles.primaryColorClass}>
                   18426 + 15921 + 25396 ={" "}
-                  <span style={{ fontWeight: "bold" }}>59743</span>
+                  <span style={styles.boldClass}>59743</span>
                 </h4>
               </Fade>
               <ListGroup>
@@ -48,9 +49,8 @@ export class Conclusion extends Component {
             </Col>
             <Col md="auto" className="pt-4">
               <Fade delay={9000} right>
-                <h4 style={{ color: "#2026D2" }}>
-                  463 + 200 + 310 ={" "}
-                  <span style={{ fontWeight: "bold" }}>973</span>
+                <h4 style={styles.primaryColorClass}>
+                  463 + 200 + 310 = <span style={styles.boldClass}>973</span>
                 </h4>
               </Fade>
               <ListGroup>
@@ -72,15 +72,12 @@ export class Conclusion extends Component {
             </small>
           </p>
         </Container>
-        <Container>
+        <Container style={styles.quoteContainerClass}>
           <Row>
             <Col md={"auto"}>
-              <h3
-                style={{ fontWeight: "bold" }}
-                className="justify-content-center pb-3"
-              >
+              <h3 style={styles.boldClass} className="justify-content-center">
                 Calmness, longevity, and consistency makes him{" "}
-                <span style={{ color: "#F1295C" }}>the greatest.</span>
+                <span style={styles.secondaryColorClass}>the greatest.</span>
               </h3>
             </Col>
           </Row>

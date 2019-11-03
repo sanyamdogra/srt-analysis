@@ -5,11 +5,10 @@ import "../../App.css";
 import stats from "../../assets/stats.svg";
 
 const styles = {
-  containerClass: { "paddingTop": "15%" },
+  containerClass: { paddingTop: "15%" },
   colorClass: { color: "#2026D2" },
-  boldClass: { "fontWeight": "900" },
-  imageContainerClass:{"paddingTop": "20%"}
-  //style={styles.containerClass}
+  boldClass: { fontWeight: "900" },
+  imageContainerClass: { paddingTop: "20%" }
 };
 
 export class QuoteBoard extends Component {
@@ -20,23 +19,30 @@ export class QuoteBoard extends Component {
           <Container className="container-quote">
             <Row>
               <Col sm={8}>
-                <Container  style={styles.containerClass}>
-                  <div/>
-                  <h3 style={styles.boldClass}>Sachin <span style={styles.colorClass}>Tendulkar,</span></h3>
+                <Container style={styles.containerClass}>
+                  <div />
+                  <h3 style={styles.boldClass}>
+                    Sachin <span style={styles.colorClass}>Tendulkar,</span>
+                  </h3>
                   <h4>
-                     is a former Indian cricketer, widely
-                    regarded to be the greatest cricketer of all time.
+                    is a former Indian cricketer, widely regarded to be the
+                    greatest cricketer of all time.
                   </h4>
 
-                  <Col >
-                    <h5 style={styles.colorClass} className='float-sm-right pr-1'>- Statistics</h5>
+                  <Col>
+                    <h5
+                      style={styles.colorClass}
+                      className="float-sm-right pr-1"
+                    >
+                      - Statistics
+                    </h5>
                   </Col>
                 </Container>
               </Col>
               <Col sm={4}>
                 {" "}
                 <Container style={styles.imageContainerClass}>
-                <img alt="" src={stats} width="350" height="250" className="" />
+                  <img alt="Stats" src={stats} width="350" height="250" />
                 </Container>
               </Col>
             </Row>
